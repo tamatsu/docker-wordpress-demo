@@ -1,3 +1,1 @@
 .env
-mysql/conf.d/*
-!mysql/conf.d/.gitkeep
