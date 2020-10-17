@@ -9,9 +9,9 @@ services:
       - ${PORT:-8080}:80
     environment:
       WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST:-localhost}
-      WORDPRESS_DB_USER: exampleuser
-      WORDPRESS_DB_PASSWORD: examplepass
-      WORDPRESS_DB_NAME: exampledb
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER:-wordpress}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD:-wordpress}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME:-wordpress}
     volumes:
       - wordpress:/var/www/html
 
